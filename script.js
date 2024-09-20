@@ -1,4 +1,4 @@
-const API_KEY = "4a75254ed2ec4cc5a0b825f7eeeefd80";
+const API_KEY = "1d3a0eefa97b499d8fbc4ee93eeb40b7";
 const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => fetchNews("India"));
@@ -42,8 +42,6 @@ function fillDataInCard(cardClone, article) {
     });
 
     newsSource.innerHTML = `${article.source.name} · ${date}`;
-
-
 
     cardClone.firstElementChild.addEventListener("click", () => {
         window.open(article.url, "_blank");
